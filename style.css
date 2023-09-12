@@ -1,0 +1,227 @@
+/** RESET */
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap");
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(235, 18%, 26%);
+  overflow: hidden;
+}
+input,
+form,
+select,
+textarea,
+table,
+tr,
+td,
+ul,
+li,
+a,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  list-style: none;
+  text-decoration: none;
+}
+*:focus {
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/* CSS */
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  display: flex;
+  transition: all 0.4s;
+  margin: 0px 2rem;
+}
+
+.container-active {
+  display: none;
+}
+
+.container > .left {
+  width: 60%;
+  height: 100%;
+  padding: 2rem 1rem;
+  color: hsl(234, 29%, 20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.left__header {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.left__text {
+  text-align: left;
+  word-spacing: 2px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  opacity: 0.95;
+}
+
+.left__info {
+  margin: 0.5rem 0rem;
+}
+
+.left__info--item {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  opacity: 0.95;
+}
+
+.left__info--item img {
+  margin-right: 1rem;
+}
+
+.left__input-area {
+  margin: 0.5rem 0rem;
+}
+
+.left__input-area > label {
+  display: block;
+  font-weight: 700;
+}
+
+.left__input-area > input {
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 0.6rem;
+  width: 80%;
+  padding: 0.6rem 1rem;
+  margin-top: 0.5rem;
+  padding-left: 20px;
+  box-sizing: border-box;
+  transition: all 0.4s;
+}
+
+.left__input-area > input::placeholder {
+  padding-left: 20px;
+}
+
+.left__input-area > button {
+  width: 80%;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.left__input-area > button:hover {
+  opacity: 0.9;
+}
+
+.container > .right {
+  width: 40%;
+  height: 100%;
+  padding: 1rem;
+}
+
+/* .right__image {
+  background-image: url("./assets/images/illustration-sign-up-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+} */
+
+.right__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* SUCCESS DIV */
+
+.success {
+  background-color: hsl(0, 0%, 100%);
+  display: none;
+  flex-direction: column;
+  color: hsl(234, 29%, 20%);
+  border-radius: 1.7rem;
+  padding: 2.5rem;
+  width: 400px;
+  transition: all 0.4s;
+}
+
+.success__icon {
+  width: 64px;
+  height: 64px;
+}
+
+.success__header {
+  font-size: 3rem;
+  word-wrap: break-word;
+  margin-top: 2rem;
+}
+
+.success__text {
+  font-size: 16px;
+  padding: 2rem 0rem;
+  font-weight: 400;
+}
+
+.success__button {
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  font-size: 16px;
+  padding: 1rem;
+  font-weight: 700;
+  border-radius: 0.6rem;
+  border: none;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s;
+}
+
+/*! idk why this button hover is not working. */
+
+.success__button:hover {
+  background: rgb(255, 91, 73);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 91, 73, 1) 19%,
+    rgba(255, 98, 77, 1) 44%,
+    rgba(255, 82, 123, 1) 64%,
+    rgba(255, 91, 128, 1) 82%,
+    rgba(255, 82, 123, 1) 98%
+  );
+  -webkit-box-shadow: 17px 81px 62px -25px rgba(171, 11, 0, 1);
+  -moz-box-shadow: 17px 81px 62px -25px rgba(171, 11, 0, 1);
+  box-shadow: 17px 81px 62px -25px rgba(171, 11, 0, 1);
+}
+
+.success-active {
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+}

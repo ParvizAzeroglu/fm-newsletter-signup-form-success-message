@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="left">
+        <h2 class="left__header">Stay updated!</h2>
+        <p class="left__text">
+          Join 59,000+ product managers receiving monthly <br />updates on:
+        </p>
+        <ul class="left__info">
+          <li class="left__info--item">
+            <img src="./assets/images/icon-list.svg" alt="list icon image" />
+            Product discovery and building what matters
+          </li>
+          <li class="left__info--item">
+            <img src="./assets/images/icon-list.svg" alt="list icon image" />
+            Measuring to ensure updates are a success
+          </li>
+          <li class="left__info--item">
+            <img src="./assets/images/icon-list.svg" alt="list icon image" />
+            And much more!
+          </li>
+        </ul>
+        <div class="left__input-area">
+          <label for="input">Email address</label>
+          <input
+            type="text"
+            id="input"
+            placeholder="email@company.com"
+            type="email"
+          />
+          <button type="submit" id="button">
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+      </div>
+      <div class="right">
+        <!-- 
+          <div class="right__image"></div> 
+      -->
+        <!--? I tried to set a background image in CSS for the first time, but I was unsuccessful. -->
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="main image"
+          class="right__image"
+          id="img"
+        />
+      </div>
+    </div>
+
+    <div class="success" id="success">
+      <img
+        src="./assets/images/icon-success.svg"
+        alt="icon success"
+        class="success__icon"
+      />
+      <h1 class="success__header">Thanks for subscribing!</h1>
+      <p class="success__text">
+        A confirmation email has been sent to <b>ash@loremcompany.com</b>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="success__button" id="dissmissMsg">Dismiss message</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
